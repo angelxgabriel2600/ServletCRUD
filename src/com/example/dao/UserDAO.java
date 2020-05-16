@@ -25,7 +25,7 @@ public class UserDAO {
 		try {
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ps.setString(1, user.getFirstName());
-			ps.setString(2, user.getLastName());
+			ps.setString(2, user.getLastName());;
 			ps.setDate(3, new java.sql.Date(user.getDob().getTime()));
 			ps.setString(4, user.getEmail());
 			ps.executeUpdate();			
