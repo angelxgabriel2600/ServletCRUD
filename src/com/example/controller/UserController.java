@@ -11,12 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-
-
-
-
-
 import com.example.dao.UserDAO;
 import com.example.model.User;
 
@@ -26,7 +20,7 @@ public class UserController extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	////////////////////////////////////////////////////////
 	private static String INSERT_OR_EDIT = "/user.jsp";
 	private static String LIST_USER = "/listUser.jsp";
 	private UserDAO dao;
